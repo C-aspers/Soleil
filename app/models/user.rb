@@ -1,4 +1,11 @@
 class User < ApplicationRecord
+  after_create :welcome_send
+  #envoi d'un mail de bienvenue après création
+
+  def welcome_send
+    UserMailer.welcome_email(self).deliver_now
+  end
+
 validates :first_name,
   presence: true
 
