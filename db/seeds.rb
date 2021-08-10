@@ -21,7 +21,7 @@ Attendance.reset_pk_sequence
 #user_rdm = rand(User.first.id..User.last.id)
 
 1.times do
-  user = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.sentence, email: FFaker::Name.first_name+@yopmail.com, encrypted_password: Faker::Lorem.characters(number: 12, min_alpha: 4, min_numeric: 2))
+  user = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.sentence, email: Faker::Name.first_name+@yopmail.com, encrypted_password: Faker::Lorem.characters(number: 12, min_alpha: 4, min_numeric: 2))
   #puts "c'est OK"
 end
 
