@@ -1,5 +1,32 @@
 <h1>New Event</h1>
 
+
+<form>
+  <div class="row">
+    <div class="col">
+    <p> Début  : </p>
+      <input type="text" class="form-control" placeholder="Start date">
+    </div><br>
+    <div class="col">
+      <p> Durée : </p>
+      <input type="text" class="form-control" placeholder="Duration">
+    </div>
+  </div>
+</form>
+
+<form>
+  <div class="row">
+    <div class="col">
+     <div class="col">
+      <p> Titre: </p>
+      <input type="text" class="form-control" placeholder="Title">
+    </div>
+    <p> Description de l'évènement  : </p>
+      <input type="text" class="form-control" placeholder="Description">
+    </div>
+  </div>
+</form>
+<br>
 <%= render 'form', event: @event %>
 
 <%= link_to 'Back', events_path %>

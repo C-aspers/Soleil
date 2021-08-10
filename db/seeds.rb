@@ -31,7 +31,7 @@ t2 = Time.parse("2022-01-01 00:00:00")
 #for the random id
 #user_rdm = rand(User.first.id..User.last.id)
 
-5.times do 
+3.times do 
   event = Event.create!(
     start_date: rand(t1..t2),
     duration: rand(5..100)*5,

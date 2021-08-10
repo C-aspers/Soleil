@@ -1,4 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+
+    <div class="p-4"></div>
+     
+      <h3><%= @event.title %></h3><br>
+      <p><%= @event.description %></p><br><br>
+
+    <div class="p-4"></div>
+      <p>Début de l'évenement : <%= @event.start_date%></p><br>
+      <p>Ville: <%= @event.location%></p><br>
+      <p>Durée de l'évenement : <%= @event.duration %>minutes</p><br>
+      <p>Prix : : <%= @event.price%> €</p><br>
+
+      <% usr = @event.user_id%>
+      <% user = User.find(usr)%>
+      <p>Create by : <%= user.first_name %> <%= user.last_name %></p>
+   
+
+      <% user_id = user.id %>
+      <a class="btn btn-primary btn-sm" href="<%="/user/#{user_id}"%>" role="button">See this creator</a>
+
+      <br><br>
+      <%= link_to 'Edit', edit_event_path(@event) %> |
+      <%= link_to 'Back', events_path %><br><br><br><br>
+
+

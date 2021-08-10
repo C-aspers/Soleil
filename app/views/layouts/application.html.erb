@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Eventbrite</title>
+    <title>Events Break</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -21,7 +21,7 @@
 
 
       <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <a class="navbar-brand" href="#">Evenbrite</a>
+        <a class="navbar-brand" href="#">Events Break</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,7 +31,7 @@
               <a class="nav-link" href="<%="/#"%>">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/events/new">Create a new event</a>
+              <a class="nav-link" href="/events/new">New event</a>
             </li>
           </ul>
       
@@ -54,8 +54,14 @@
         </div>
       </nav>
     
+   
 
     <%= yield %>
+      <br><br>
+     <footer class="container">
+      <p>© Events Break 2021</p>
+    </footer>
+
   </body>
 </html>
 
