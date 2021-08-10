@@ -69,3 +69,5 @@ gem 'table_print'
 gem 'activerecord-reset-pk-sequence'
 
 gem 'dotenv-rails'
+
+gem 'devise'
